@@ -1,0 +1,36 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body>
+    <script>
+
+        let arrayKosong = []
+        let arrayNama = ["Gallick", "Gun", "NeoGallickGun"]
+
+        arrayKosong.push("Gallick", "NeoGallickGun")
+
+        console.table(arrayKosong)
+
+        console.info(arrayKosong[0])
+
+        arrayKosong[0] = "Neo"
+
+        console.table(arrayKosong)
+
+        console.info(arrayKosong[0])
+
+        delete arrayKosong[1]
+
+        console.table(arrayKosong)
+
+        arrayKosong.push(["Ultra", "Instinct"])
+
+        console.table(arrayKosong)
+
+    </script>
+</body>
+</html>
