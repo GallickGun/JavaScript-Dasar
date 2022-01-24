@@ -1,0 +1,37 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konversi string dan number</title>
+</head>
+<body>
+    <script>
+        const value1 = 1
+        const value2 = parseInt("2")
+        const sum = value1 + value2
+
+        document.writeln(`</p> ${sum}</p>`)
+        document.writeln(`</p> ${parseInt("3.4")}</p>`)
+        document.writeln(`</p> ${parseFloat("3.6")}</p>`)
+        document.writeln(`</p> ${Number("5.6")}</p>`)
+
+        const a = 4
+        const b = 9
+        const total = a.toString() + b.toString()
+
+        document.writeln(`<p> ${total}</p>`)
+
+        document.writeln(`</p> ${parseInt("randommmm")}</p>`)
+        document.writeln(`</p> ${parseFloat("3.6dssdfsdkfs")}</p>`)
+
+        const first = Number("dggerkgeroge")
+        const totalNumber = first + 200
+
+        document.writeln(`<p> ${totalNumber}</p>`)
+
+        document.writeln(`<p> ${isNaN(first)}</p>`)
+
+    </script>
+</body>
+</html>
