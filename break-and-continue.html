@@ -1,0 +1,29 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Break & Continue</title>
+</head>
+<body>
+    <script>
+
+       let counter = 1
+        while(true){
+            document.writeln(`Infinite loop ${counter}<br>`)
+            counter++
+
+            if(counter > 45) {
+                break
+            }
+       }
+
+        for(let i = 1; i < 25; i++){
+            if(i % 2 === 0){
+                continue
+            }
+            document.writeln(`Odd Numbers for the given range # ${i}<br>`)
+        }
+    </script>
+</body>
+</html>
