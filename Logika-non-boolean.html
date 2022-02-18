@@ -1,0 +1,31 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logika non boolean</title>
+</head>
+<body>
+    <script>
+        
+        console.info('Helllo' || '')
+        console.info('' || [])
+        console.info('0' || 'NOL')
+        console.info(0 || 'NOLL')
+        console.info(null || 'NULL')
+
+        const person = {
+            "firstName": "Gallick",
+            "lastName": "Gun"
+        }
+
+        const name = person.firstName || person.lastName
+        document.writeln(name)
+
+        console.info('Helllo' && '')
+        console.info('' && [])
+        console.info('Helllo' && '')
+        
+    </script>
+</body>
+</html>
