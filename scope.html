@@ -1,0 +1,60 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope</title>
+</head>
+<body>
+    <script>
+        // global scope, local scope
+        // global scope is accessible by local scope
+        // local scope is exclusive
+
+        //global scope
+        let counter = 0
+
+        function hitMe(){
+            //local scope hitMe
+            counter++;
+        }
+
+        hitMe()
+        hitMe()
+
+        console.info(counter)
+
+        function first(){
+            //local scope first
+            let firstVariable = "First"
+        }
+
+        function second(){
+            //local scope second
+            let secondVariable = "Second"
+        }
+
+        first()
+        second()
+
+       // console.info(firstVariable) //error
+       // console.info(secondVariable) //error
+
+        function firstNested(){
+            let firstVariable1 ="first"
+
+            function secondNested(){
+                console.info(firstVariable1) //accessible
+            }
+            
+            secondNested()
+            console.info(secondNested)
+            console.info(firstVariable1)
+        }
+
+        firstNested()
+        //console.info(firstNested)
+
+    </script>
+</body>
+</html>
