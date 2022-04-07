@@ -1,0 +1,106 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destructuring</title>
+</head>
+<body>
+    <script>
+        //get data from array
+
+        // const names = ["James", 'Jack', "Jazz"];
+        // const firstName = name[0];
+        // const middleName = name[1];
+        // const lastName = name[2];
+
+        // console.info(firstName);
+        // console.info(middleName);
+        // console.info(lastName);
+
+        //Destructuring array
+
+        // const cast = ["Sonic", "Tails", "Amy", "Eggman", "Shadow", "Albatros"];
+        // const [mainCast,supportingCast1, supportingCast2, ...others] = cast;
+
+        // console.info(mainCast);
+        // console.info(supportingCast1);
+        // console.info(supportingCast2);
+        // console.info(others);
+
+        //Destructuring object and nested object
+        // supports multi-level
+
+        // const character = {
+        //     firstName: "Sonic",
+        //     lastName: "Hedgehog",
+        //     color: "Blue",
+        //     address: {
+        //         city: "Emerald City"
+        //     },
+        //     ability: "Running",
+        //     skateboard: "Blue Star II"
+        // }
+
+        // const {firstName, lastName, color, address: {city}, ...misc} = character;
+
+        // console.table(firstName);
+        // console.table(lastName);
+        // console.table(color);
+        // console.table(city);
+        // console.table(misc);
+
+        //Destructuring function parameter
+
+        
+            // function displayCharacter({firstName, lastName, color}){
+            //     console.info(firstName);
+            //     console.info(lastName);
+            //     console.info(color)
+            // }
+
+            // const character = {
+            //     firstName: "Shadow",
+            //     lastName: "Hedgehog",
+            //     color: "Black"
+            // };
+
+            // displayCharacter(character);
+
+        // default value destructuring array
+
+        // const names = ["Gallick"];
+        // comst [firstName, lastName = "Gun"] = names;
+
+        // console.info(firstName);
+        // console.info(lastName);
+
+        // default value destructuring object
+
+        //  const character = {
+        //         firstName: "Shadow",
+        //         lastName: "Hedgehog",
+        //         color: "Black"
+        //     };
+
+        //     const{firstName, lastName, color, game = "Sonic Riders"} = character;
+            
+        //     console.info(game);
+
+        // changing the variable names
+
+        const character = {
+                firstName: "Shadow",
+                lastName: "Hedgehog",
+                color: "Black"
+            };
+
+            const{firstName: characterName, 
+                lastName, 
+                color: skin,
+                 game = "Sonic Riders"} = character;
+            
+            console.info(characterName);
+    </script>
+</body>
+</html>
